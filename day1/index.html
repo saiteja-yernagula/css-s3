@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+
+    <style>
+/* 
+        property:value;
+        property:value;
+        property:value; */
+
+     /* class selector - class='el1'  */
+        /* .el1{
+            color:white;
+            background-color: blue;
+        }
+        /* id selector-id='el2' */
+        /* #el2{
+            color:brown;
+            background-color: lightgrey;
+        } */
+        /* grouping selector */
+        /* .el1,#el2,h1,div{
+            font-family: monospace;
+        } */
+        /* universal selector */
+         /* *{
+            border:4px solid red;
+         } */ 
+
+
+
+         #el2{
+            color:red;
+         }
+
+         div{
+            color:#af9 !important;
+         }
+
+         /* div{
+            color:yellow;
+         }
+
+         .demo1{
+            background:purple;
+         } */
+
+      
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+
+    what is css
+    cascading style sheets
+
+    cascading -  flowing down
+    style sheet -a document which contains properties and values
+
+    css
+    it is a style sheet language used to describe the
+    presentation of a document
+    it tell the element how to appear on the screen
+    it allows developers to design layout, colors ,fonts,animations
+    and responsive design.
+
+    three ways to insert css
+    1. inline css - styles will be applied to a single element using 
+    style attribute
+    <h1 style="background:blue; color:white">heading</h1>
+    
+    2. internal css-  styles will be applied to the entire html document
+    using <style></style> tag inside <head></head> section
+
+    selectors - it is used to target html elements to apply styles
+    h2{
+        property:value;     declaration 
+        property:value;
+        property:value;
+    }
+    h2{
+        color:green;
+        background:yellow;
+    }
+
+    3. external css - it allows us to apply styles to multiple
+    html documents by linking an external .css file using <link> tag
+
+    .css extension
+    h1{
+        color:red;
+        background:black;
+    }
+
+    <link rel="stylesheet" href="style.css">
+
+    precedence order
+    inline css have high precedence
+    internal and external css have same precedence 
+    it depends on the order you wrote
+
+    types of selectors
+    1. simple selectors
+       element selector - styles will be applied based on a element
+       class selector - styles will be applied based on a class attribute
+       id selector - styles will be applied based on a id attribute
+       grouping selector - styles will be applied to multiple elements
+       universal selector - styles will be applied to all elements
+
+    2. combinator selectors
+    3. pseudo-class selectors
+    4. pseudo-element selectors
+    5. attribute selectors
+    
+    class
+    it is used to apply styles to multiple elements
+    we can take multiple classes for a single element
+    class have higher specificity than element selector
+    it is denoted by a dot(.) symbol
+    <h1 class="el1">heading</h1>
+    .el1{
+        color:white;
+        background:blue;
+    }
+
+    id
+    it is used to apply styles to a single element (uniquely)
+    id have higher specificity than class selector
+    it is denoted by a hash(#) symbol
+    <p id="el2">paragraph</p>
+    #el2{
+        color:brown;
+        background:lightgrey;
+    }
+
+    !important
+    it is used to give highest priority to a particular property
+    it overrides all other declarations
+
+    div{
+        color:blue !important;
+    }
+    
+    how many ways we can apply colors
+    by name 
+    color:red;
+
+    by r0-255gb values;
+    color:rgb(255,0,0)
+    color:rgb(0,255,0)
+    color:rgb(0,0,0)
+    color:rgb(255,255,255)
+
+    by hsl - hue0-360,saturation,lightness
+    color:hsl(120,100%,50%)
+
+    by hex code;
+    a-f
+    0-9
+    
+    color:#ff0000
+    color:#fa9
+
+
+
+
+
+    
+    -->
+<!-- 
+    <h1 class="el1">heading</h1>
+    <h2 class="el1">sub heading</h2>
+    <p class="el1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa dolorum voluptatibus nam commodi officia! Cumque sunt ratione libero, repudiandae molestiae quasi dolores aliquam officiis aspernatur eum ex tempora dolorum.</p>
+
+
+    <p id="el2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos maxime at ab? Quia ad accusantium fugiat exercitationem aperiam vero assumenda provident quidem, atque magnam laudantium! Repellendus aspernatur quod temporibus.</p> -->
+
+
+    <div class="el1" id="el2">conten 1</div>
+   </body>
+</html>
