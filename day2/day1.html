@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        
+        /* 
+        css
+
+        inline---high precedence
+        internal -- 2nd high
+        externaal  - last 
+
+        css syntax
+
+        declaration
+        selector- it is used to target the html element
+
+        selector{
+        property:value;
+        property1:value1;
+        }
+
+
+        simple selector 
+        element --- h1{declaration}
+        class ----  
+            .el{declaration}
+           <div class='el'>some conte</div>
+        id 
+            #demo{declaration}
+           <div id='demo'>some conte</div>
+           
+        grouping 
+
+        h1,.ell,#demo{declartion}
+
+        universal
+        *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        }
+        
+        specificity 
+        id
+        class
+        element
+        universal
+
+        !important --- it will add weightage 
+        it will override the specficity 
+
+        div{
+        color:red !important;
+        }
+
+
+        box model 
+        it is used to describe the layout of an element
+        it consists of four components (content(w,h), padding,border,margin)
+
+
+        content 
+        it includes height and width 
+
+        padding
+        it the space between the content and the border 
+
+        padding:40px;
+
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:20px;
+        padding-right:20px;
+
+        shorthand property
+        padding: 10px 20px 30px 40px;
+                 top   right bottom left;
+
+        padding: 10px 20px 30px ;
+                top   left/right  bottom
+        
+        padding: 10px   20px;
+               t/b     l/r
+
+        
+        border -
+        it is line around the padding 
+
+
+        it is used apply the color to the border
+        border-color: black;
+
+        it is used to apply the width to the border
+        border-width:1px ;
+
+        it is used too apply style to the border
+        border-stye:solid;
+        solid , dotted ,dashed , double , ridge
+        groove , none,inset ,outset
+
+        it is used to add curve type edge to the border
+        border-radius:10px;
+
+        border-top-style:solid;
+        border-top-color:red;
+        border-top-width:10px;
+
+        shorthand property
+        border: 1px solid red;
+               width style color
+        
+        border-bottom:1px solid blue
+
+        margin 
+        it is the space around the elements
+
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left :10px;
+        margin-right:10px;
+
+        margin:20px -all sides;
+        margin:10px 20px 30px 40px;
+               t    r    b     l
+        margin:10px 20px 30px;
+        margin:20xp 10px;
+
+
+
+
+
+
+
+
+
+        
+        
+        */
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        div{
+                /* padding-top:10px;
+        padding-bottom:20px;
+        padding-left:30px;
+        padding-right:40px; */
+            /* width:300px;
+            height:300px; */
+            box-sizing:border-box;
+            width:500px;
+            height: 500px;
+            margin:20px;
+            padding:20px;
+            border:10px solid red;
+            background-color: rgb(7, 148, 148);
+            /* border-bottom-style:solid ;
+            border-bottom-width: 10px; */
+            /* border-radius:50%; */
+            /* padding:20px;
+            margin:   40px; */
+            /* border-color:blue;
+            border-width:10px;
+            border-style:solid;
+            border-top-style:dotted;
+            border-right-style:dashed;
+            /* border-top-color:red; */ */
+            
+            
+
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div>content</div>
+    <div>content</div>
+
+    
+</body>
+</html>
