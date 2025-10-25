@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        box model 
+        content
+        padding
+        border
+        margin
+
+
+        box-sizing
+
+        
+
+        combinators- it is used to target the html elemens
+         but based on the realation ship
+
+        descendent selector - it is denoted by space
+        it will select all child and sub child elements
+ 
+
+        div h1{
+           border :1px solid red;
+        }
+
+        child selector : it is denoted by >
+        it is used to select direct childs only
+        div>h1{
+           border :1px solid red;
+        }
+
+        adjacent sibling selector:it is denoted by +
+        it is used to select adjacent sibling element of a main element
+        div+p{
+        background:blue;
+        }
+
+        general sibling selector- it is denoted by ~
+        it is used to select all the sibling elements
+        div~h1{
+        color:red;
+        }
+
+
+        block
+        inline - styles (margin, width and height) will not be applied
+        inline-block- it will behave like a inline elements
+        but takes properties like an block level element
+
+        display: inline;
+        display:block;
+
+        */
+ 
+        h1{
+            background-color: steelblue;
+            margin:20px;
+            color:white;
+            width:300px;
+            height:200px;
+            padding:20px;
+            display: inline;
+        }
+        span{
+            /* display: block; */
+            background-color: brown;
+            color:white;
+            padding-left:20px;
+            /* padding-top:20px; */
+            margin-left:20px;
+            margin-top:30px;
+            width:100px;
+            height:100px;
+            display: inline-block;
+        }
+        img{
+            width:200px;
+            height:200px;
+        }
+        .card{
+            display: inline-block;
+            width:30%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+            <h6>price:200/-</h6>
+            <p>descrition of the prodcut</p>
+        </div>
+
+         <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+            <h6>price:200/-</h6>
+            <p>descrition of the prodcut</p>
+        </div>
+         <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+            <h6>price:200/-</h6>
+            <p>descrition of the prodcut</p>
+        </div>
+         <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+            <h6>price:200/-</h6>
+            <p>descrition of the prodcut</p>
+        </div>
+         <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+            <h6>price:200/-</h6>
+            <p>descrition of the prodcut</p>
+        </div>
+         <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="">
+            <h6>price:200/-</h6>
+            <p>descrition of the prodcut</p>
+        </div>
+       
+
+    </section>
+<!-- 
+    <h1>content</h1>
+    <h1>content</h1>
+    <h1>content</h1>
+
+
+    <div>
+        <span>inline 1</span>
+        <span>inline2</span>
+        <span>inline 3</span>
+    </div> -->
+    <!-- <div>
+        <h1>heading content</h1>
+        <h1>heading content</h1>
+        <h1>heading content</h1>
+        <h1>heading content</h1>
+        <h1>heading content</h1>
+        <section>
+            <h1>sub child heading</h1>
+        </section>
+    </div>
+    
+    <h1>adjacent</h1>
+    <h1>second sibling</h1>
+    <h1>third sibling</h1>
+    <p>lorem</p>
+
+    <p>
+        <h1>content2</h1>
+        <h1>content2</h1>
+        <h1>content2</h1>
+        <h1>content2</h1>
+        <h1>content2</h1>
+    </p> -->
+
+
+
+    
+    
+</body>
+</html>
