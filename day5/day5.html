@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        pseudo classes 
+        units 
+        vh vw % em rem
+        
+
+        */
+
+        td{
+            border:1px solid black;
+            width:100px;
+            height:100px;
+        }
+
+        tr:nth-child(odd)>td:nth-child(even){
+            background-color: black;
+        }
+
+         tr:nth-child(even)>td:nth-child(odd){
+            background-color: black;
+        }
+
+        td:hover{
+            font-size: 30px;
+        }
+
+        /*
+        
+        how to  hide an element
+         display : none- it is used to hide the element and space 
+
+         display : block  - unhide
+
+         visibility: hidden; - it is used to hide an element but not an space
+
+        
+        */
+
+      
+      
+        /* .child{
+            display: none;
+            height: 100px;
+            width:100px;
+            background-color: orangered;
+        }
+          .parent:hover>.child{
+            display: block;
+        } */
+
+        /* 
+        
+        positions
+
+        z-index
+        it is used to control the stack order of an element
+    
+
+
+
+        */
+
+
+        img{
+            width:200px;
+            height:300px;
+            border:2px solid black;
+            background-color: white;
+        }
+
+
+        .container{
+            background-color: lightsalmon;
+            padding:60px;
+        }
+/* 
+        #two{
+            position: relative;
+            /* top and left have high precedence */
+            /* left:200px;
+
+            top:320px; */
+            /* right:60px;
+            /* bottom:40px; */
+            /* right:130px;
+            z-index:3;  */
+            
+
+
+
+        
+          
+        /* }
+
+        #one{
+            position: relative;
+            right:60px;
+            bottom:90px;
+            z-index:2
+        } */
+
+        /* #five{ */
+            /* position: relative;
+            left:450px;
+            bottom:90px;
+        } */
+       
+/* 
+       #two{
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+       
+        
+       }
+
+       #one{
+        position: absolute;
+        bottom:0;
+        left:0;
+       }
+       #three{
+         position: absolute;
+        right:0;
+        top:0;
+
+       }
+       #four{
+         position: absolute;
+        bottom:0;
+        right:0;
+       } */
+
+       .container{
+        margin:40px;
+        position: relative;
+       }
+
+       #one{
+        position: absolute;
+        top:0;
+        left:0;
+       }
+
+       #two{
+          position: absolute;
+        right:0;
+        bottom:0;
+
+       }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        parent content
+        <div class="child">chidl content</div>
+    </div>
+   
+    <table>
+        <tr>
+            <td>c</td>
+            <td>c</td>
+            <td>c</td>
+            <td>c</td>
+            <td>c</td>
+            <td>c</td>
+            <td>c</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> -->
+
+
+
+
+    <!--  -->
+
+    <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo minima at iste est. Voluptas repudiandae totam reprehenderit sequi quia perspiciatis expedita accusamus, nulla cum molestiae earum ipsum autem tempore sed!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo minima at iste est. Voluptas repudiandae totam reprehenderit sequi quia perspiciatis expedita accusamus, nulla cum molestiae earum ipsum autem tempore sed!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo minima at iste est. Voluptas repudiandae totam reprehenderit sequi quia perspiciatis expedita accusamus, nulla cum molestiae earum ipsum autem tempore sed!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo minima at iste est. Voluptas repudiandae totam reprehenderit sequi quia perspiciatis expedita accusamus, nulla cum molestiae earum ipsum autem tempore sed!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo minima at iste est. Voluptas repudiandae totam reprehenderit sequi quia perspiciatis expedita accusamus, nulla cum molestiae earum ipsum autem tempore sed!
+    </h1>1
+    <div class="container">
+        <img src="img1.png" alt="" id="one">
+        <img src="img2.png" alt="" id="two">
+        <img src="img3.webp" alt="" id="three">
+        <img src="img4.png" alt="" id="four">
+        <img src="img5.jpeg" alt="" id="five">
+    </div>
+    
+</body>
+</html>
