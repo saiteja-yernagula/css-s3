@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            width:50%;
+            height:300px;
+            border:1px solid red;
+        }
+         div{
+    height: 50vh;
+    width:50vw;
+    background:blue;
+    } */
+     div{
+         box-sizing:border-box;
+     width:100px;
+     padding:20px;
+     border:10px solid black;
+
+     }
+
+
+    
+    </style>
+</head>
+<body>
+    <!-- 
+    css 
+    ways to insert css -inline(using style) ,internal(style tag) and external (take .css extensiont)
+    selectors- it is used to target the html elemnts to apply styles
+    types of selectors- 
+       simple selectors- element selector,.class selector,
+                  #id selector, ,grouping selector and * universal
+                  *{
+                  box-sizing:border-box;
+                  margin:0;
+                  padding:0;
+                  }
+    colors
+    box model 
+    it is used to describe the layout of an element
+    four components -content(width and height)
+                    padding
+                    border
+                    margin
+    
+    content- it includes width and height
+    div{
+    width:500px;
+    height:200px;
+    background:blue;
+    }
+
+    <div>container</div>
+
+    div{
+    width:100%;
+    height:50%;// parent should have height then only
+               //it will be applied
+    }
+
+    div{
+    height: 50vh;//it always depends on visible screen height
+    width:50vw; //it always depends on visible screen width
+    background:blue;
+    }
+
+    em(it always depends on the fontsize of parent)
+    div{
+    font-size:2em
+    }
+    <div>content</div> ...32px
+    <h1>
+        <div>content</div> ...64px
+    </h1>
+
+        
+    rem-it always depends on root ele font size
+       div{
+    font-size:2rem;
+    }
+    <div>content</div> ...32px
+    <h1>
+        <div>content</div> ...32px
+    </h1>
+
+
+    padding:
+    it is space between the content and the border
+    div{
+    padding: top right bottom left
+    padding: 10px 20px 30px 40px;
+    }
+
+    border: 
+    it is line around the padding 
+    border-style: solid ,dotted, dashed,double,
+             ridge,groove,
+            inset,outset,none
+    border-width: 1px 
+    border-color: name or hex or rgb or hsl
+    border-radius: 10px or 50%
+
+    div{
+    border: 1px solid red;
+    border-radius: 20%;
+    }
+
+    margin- 
+    it is space around a element
+    space between two elements
+
+    div{
+    margin: top right bottom left;
+    margin:10px 20px 30px 40px;
+    }
+
+    box-sizing 
+     it specifies how widht and height should be applied in
+     an element
+     div{
+     width:100px;
+     padding:20px;
+     border:10px;
+     }....total size   10 20  100 20 10 ---160px
+     apply box-sizing:border-box
+ div{
+ box-sizing:border-box
+     width:100px-10-20-10-20=40
+     padding:20px;
+     border:10px;
+     }....  10 20  40    20 10...100px
+
+
+
+
+
+    combinators
+    units
+    display properties
+    positions
+
+
+
+    
+    -->
+<h1>container</h1>
+    <div>container</div>
+    <h1>
+        <div>container</div>
+    </h1>
+
+</body>
+</html>
