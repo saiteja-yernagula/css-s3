@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            background: lightpink;
+        }
+
+        .inline-block{
+            visibility: hidden;
+            visibility: visible;
+            background-color: blue;
+            width:200px;
+            height:200px;
+            margin-top:50px;
+        }
+
+       
+        .m{
+            background: black;
+            margin:5px;
+            width:40px;
+            height:7px;
+        } 
+        .dropdown{
+            background: lightsalmon;
+            width:20%;
+            display: none;
+            position: absolute;
+            
+        }
+
+        .menu:hover~.dropdown,.dropdown:hover{
+            display: block;
+        }
+        .dropdown>div{
+            border:1px solid black;
+            padding:20px;
+        } */
+ .m{
+            background: black;
+            margin:5px;
+            width:40px;
+            height:7px;
+        } 
+        .container{
+             margin:200px;
+            border:1px solid black;
+            position: relative;
+        }
+        .container>div{
+            width:20%;
+            height:400px;
+            background: lightblue;
+            display: inline-block;
+           
+        }
+        .child2{
+            background: lightsalmon !important;
+            position:absolute;
+            bottom:0;
+            right:0;
+           
+        }
+        .container2{
+            position: relative;
+        }
+        .menu{
+            position: absolute;
+            top:5px;
+            left:10px;
+        }
+        input{
+            width:40%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    combinators
+    pseudo classes
+
+    display
+    block- it will occupy whole width and it always start 
+    in new line
+    it will take all the properties
+
+    inline- it will occupy necessary width and it doesnt 
+    start on new line
+    it wont take properties margin top and bottom
+    and width and height
+     .inline{
+            display: inline;
+            background-color: blue;
+            width:200px;
+            height:200px;
+            margin-top:20px;
+        }
+
+    inline-block- it behaves as inline element 
+    but takes properties like block level
+     .inline-block{
+            display: inline-block;
+            background-color: blue;
+            width:200px;
+            height:200px;
+            margin-top:50px;
+        }
+
+        how to hide an element
+        visibility:hidden 
+        it will hide the element but still shows the 
+        space
+
+        display:none
+        it hides both element and space
+
+        to show hidden element
+        visibility:visible;
+        display:block or inline-block or block;
+
+
+
+        postions
+
+        1.static- it is a default property 
+           it doesnt take properties like top right 
+           bottom left and z-index
+        2. relative -
+            using realtive we can move the element by
+            using top rigght bottom left and z-index
+            but it will moves according to the position
+            of itself
+             .child2{
+            background: lightsalmon !important;
+            position:relative;
+            /* high precedence-top left */
+            /* top:20px; 
+            left:30px; */
+            right:40px;
+            bottom:100px;
+        }
+
+        3. absolute-
+        it will move based on the nearest position
+        ancesistor if there is nothing
+        then it it will move according to view port
+    
+        according to viewport
+        .child2{
+            position:absolute;
+            bottom:0;
+            right:0;
+        }
+
+acording to the parent postion element
+        .container{;
+            position: relative;
+        }
+        .child2{
+            position:absolute;
+            bottom:0;
+            right:0;
+        }
+
+    
+    -->
+<!-- 
+    <div class="menu">
+        <div class="m"></div>
+        <div class="m"></div>
+        <div class="m"></div>
+    </div>
+
+    <div class="dropdown">
+        <div><a href="#home">home</a></div>
+        <div><a href="#about">about</a></div>
+        <div><a href="#contact">contact</a></div>
+    </div>
+
+    <h1 style="background: blue;">heading next section</h1> -->
+
+    
+    <div class="container">
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div>
+    </div>
+
+    <div class="container2">
+          <div class="menu">
+        <div class="m"></div>
+        <div class="m"></div>
+        <div class="m"></div>
+    </div>
+        <input type="text">
+
+         .container2{
+            position: relative;
+        }
+        .menu{
+            position: absolute;
+            top:5px;
+            left:10px;
+        }
+        input{
+            width:40%;
+            height: 50px;
+        }
+    </div>
+</body>
+</html>
