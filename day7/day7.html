@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* div~.section2{
+       background: blue;
+        }
+
+         a:link{
+        color:green;
+        
+        }
+        a:visited{
+        color:red;
+
+        }
+        a:hover{
+        color:yellow;
+
+        }
+        a:active{
+        color:violet;
+        
+        }
+
+        input:focus{
+            background: green;
+        }
+        #section1:target{
+            background: yellow;
+        } */
+
+
+         /* :root{
+        --primary:lightblue;
+        --secondary:blue;
+        }
+
+        p{
+        border : 1px solid var(--primary);
+        }
+        div{
+            background: var(--primary);
+        } */
+        /* 
+        combinators - it is used to target the html element
+         based on relationship
+
+         descendent selector- it is used to target the all child
+                            and subchild elements
+                            it is denoted by space 
+        div p{
+        border: 1px solid black;
+        }
+        <div>
+            <p>child</p>
+            <section>
+                <p>sub child</p>
+                <h1>heading</h1>
+            </section>
+        </div>
+
+        child selector -it is used to target the child elements
+                          denoted by >
+        div>p{
+        border:1px solid black;
+        } 
+         <div id='container'>
+            <p>child</p>
+            <section>
+                <p>sub child</p>
+                <h1>heading</h1>
+            </section>
+        </div>
+
+        adjacent sibling selctor - it is used to target the adjacent 
+                       element of an main element
+                       it is denoted by +
+        div+.section2{
+        background:blue;
+        }
+         <div>
+            <p>child</p> 
+        </div>
+     <p class="section2">
+        sibling content
+     </p>
+     <p class="section2"> 
+        2nd sibling
+     </p>
+
+     general sibling selector- it will target all the sibling elements
+                             denoted by  ~
+     div~.section2{
+        background:blue;
+        }
+         <div>
+            <p>child</p> 
+        </div>
+     <p class="section2">
+        sibling content
+     </p>
+     <p class="section2"> 
+        2nd sibling
+     </p>             
+
+
+
+
+
+        pseudo class selectors- it is used to target the html elements
+        based on state and position of an element
+        unvisited state
+        a:link{
+        color:green;
+        }
+        a:visited{
+        color:red;
+        }
+        a:hover{
+        color:yellow;
+        }
+        a:active{
+        color:violet;
+        }
+
+        input:focus{
+        background:green;
+        }
+        <input type='text'>
+
+        #section1:target{
+        background:yellow;
+        }
+        <a href='#section1'>section1</a>
+        <div id='section1'>section1 contentt</div>
+
+
+        :root{
+        --primary:red;
+        --secondary:blue;
+        }
+
+        div{
+        border : 1px solid var(--primary);
+        }
+
+
+        tr:first-child{
+        background:blue;
+        }
+         tr:last-child{
+        background:blue;
+        }
+         tr:nth-child(2){
+        background:blue;
+        }
+        tr:nth-child(even){
+            background-color: lightsalmon;
+        }
+        tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+
+
+        
+        
+        */
+
+        tr:nth-child(even){
+            background-color: lightsalmon;
+        }
+        tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+    </table>
+
+    <a href='#section1'>section1</a>
+
+        <div id="section1">section1 contentt</div>
+        <input type='text'>
+
+    <a href="https://posibabu116.github.io/dailytasks/27_05_24/Tasks/chess1.html">link</a>
+     <div>
+            <p>child</p> 
+        </div>
+
+        <h1>heading</h1>
+
+     <p class="section2">
+        sibling content
+     </p>
+     <p class="section2"> 
+        2nd sibling
+     </p>
+    
+
+</body>
+</html>
