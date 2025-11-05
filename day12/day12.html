@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            display: flex;
+            /* flex-direction: column-reverse; */
+        /* justify-content: space-between; */
+        /* height:100vh; */
+        /* background: rgb(151, 182, 182);
+            /* align-content:space-evenly ; */
+
+        /* gap: 10px;
+            flex-flow:row-reverse wrap-reverse; */
+
+        /*         
+        .child{
+            background-color: lightcoral;
+            width:20%;
+            padding:20px;
+            
+            color:white;
+        } */
+
+
+        .container {
+            background: navy;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        .container2 {
+            height: 100vh;
+            font-size: 50px;
+            color: navy;
+            /* perfect centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: space-around;
+            gap:20px;
+            padding:20px;
+        }
+        .container3>div{
+            width:50%;
+        }
+        img{
+            width: 100%;
+            height: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+    pseudo element selectors
+    background properties
+
+
+    flexbox
+    it is a one dimensional layout model
+    that allows you develop different layouts effectively
+    it has flex-container properties(parent properties)
+    and flex-items(child properties)
+
+    by apply display:flex to the parent we can
+    control the child 
+
+    parent properties
+    1) display : flex
+    it will create a flex container that will align
+    the items direction in horizontal
+
+    2) flex-direction:
+    it is used to control the axis of flex items
+    flex-direction: row
+                   row-reverse
+                   column
+                   column-reverse
+    
+    3) justify-content
+    it is used to control the flex items on main axis
+    (horizontal axis)
+    justify-content:flex-start
+                    flex-end
+                    center
+                    space-between
+                    space-evenly
+                    space-around
+   
+    4) align-items
+    it is used to control the flex items on cross axis
+    (vertical axis)
+    align-items: stretch;
+                flex-start;
+                flex-end;
+                center;
+    
+    5) flex-wrap
+    it is used to create multiple rows by wrapping
+    the execessive flex items
+    flex-wrap:nowrap;
+              wrap;
+              wrap-reverse;
+    
+    6) align-content
+    it is used to control the flex items on cross
+    axis when there is a multiple rows
+    align-content: stretch;
+                 flex-start
+                 flex-end
+                 center;
+                 space-between;
+                 space-around;
+                 space-evenly;
+
+    7) gap:
+    it is used to create space between rows and columns
+    gap: rowvalue columnvalue;
+        10px   20px;
+    
+    8) flex-flow : it is shorthand property for direction 
+               and wrap
+      flex-flow: row wrap;
+
+                    
+    
+    
+
+     
+
+    
+    -->
+
+    <nav class="container">
+        <h1>logo</h1>
+        <ul class="menu">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+
+    <div class="container2">
+        build something with ur tech stack
+
+    </div>
+
+
+    <div class="container3">
+        <div class="child1">
+            <h1>Website
+                Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing e
+               strum ea?</p>
+            <button>click </button>
+        </div>
+        <div class="child2">
+            <img src="https://i0.wp.com/st4.depositphotos.com/1032998/22808/v/1600/depositphotos_228087374-stock-illustration-web-design-studio-website-creation.jpg?ssl=1" alt="">
+        </div>
+    </div>
+
+ <div class="container3">
+     <div class="child2">
+         <img src="https://i0.wp.com/st4.depositphotos.com/1032998/22808/v/1600/depositphotos_228087374-stock-illustration-web-design-studio-website-creation.jpg?ssl=1" alt="">
+     </div>
+        <div class="child1">
+            <h1>Website
+                Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing e
+               strum ea?</p>
+            <button>click </button>
+        </div>
+    </div>
+</body>
+
+</html>
