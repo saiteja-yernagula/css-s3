@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            background: lightcoral;
+            height: 100vh;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap:40px 20px;
+            /* align-content:space-around; */
+            /* flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; */
+            /* justify-content:space-around;
+            align-items:flex-end; */
+        }
+        .child{
+            /* background: navy;
+            color:white; */
+            /* margin:10px; */
+        }
+
+        .container{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            gap:30px;
+        }
+        .child{
+            width:25%;
+           
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(79, 47, 36);
+            color:white;
+            position: sticky;
+            top:0;
+        }
+        .menu{
+            display: flex;
+            list-style-type: none;
+            gap:20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--
+     flexbox 
+     it is a model that used to create one dimensional layouts 
+     efficiently
+     it has flex container (parent)
+     and flex items (child)
+
+     flex container properties (parent)
+     1) display : flex;
+       it is used to create a flex box that have items
+       in horizontal direction
+       .parent{
+       display:flex;
+       }
+      <div class="parent">
+        <div class="child">content</div>
+        <div class="child">content</div>
+       </div>
+
+       2) justify-content:
+       it is used to control the flex items on 
+       main axis 
+       .parent{
+       justify-content: flex-start;default
+                       flex-end
+                       center
+                       space-between
+                       space-around
+                       space-evenly
+       }
+
+       3) align-items: it is used to control the 
+       flex items on cross axis
+       .parent{
+       align-items: stretch;default
+                    flex-start;
+                       flex-end;
+                       center;
+       }
+
+       4) flex-direction: it is used to control the
+       direction of the flex items
+       .parent{
+       flex-direction: row;default
+                     column;
+                     row-reverse;
+                     column-reverse;
+       }
+
+       5) flex-wrap:
+       it is used wrap the element to the next row
+       .parent{
+       flex-wrap:nowrap; default
+                 wrap;
+                 wrap-reverse;
+                 }
+
+       6) align-content:
+       it is used to control the flex items on cross
+       axis when there is a more than one row.
+       .parent{
+       align-content:stretch;default
+                     flex-start
+                     flex-end
+                     center
+                     space-between
+                     space-around
+                     space-evenly
+       }
+
+       7) gap :
+       it is used to create space between rows and columns
+       gap: rowgap columngap;
+       gap : 20px 30px;
+
+       8) flex-flow:
+       it is a short hand property for direction and wrap
+       flex-flow: row-reverse wrap;
+
+
+
+
+       
+
+     
+
+    
+
+    -->
+
+    <div class="nav">
+        <h1>logo</h1>
+        <ul class="menu">
+            <li>content</li>
+            <li>content</li>
+            <li>content</li>
+        </ul>
+    </div>
+      
+
+    <div class="container">
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="">
+            <div>some content</div>
+        </div>
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="">
+            <div>some content</div>
+        </div>
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="">
+            <div>some content</div>
+        </div>
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="">
+            <div>some content</div>
+        </div>
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="">
+            <div>some content</div>
+        </div>
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="">
+            <div>some content</div>
+        </div>
+    </div>
+</body>
+</html>
