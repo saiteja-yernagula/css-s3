@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+    display: flex;
+    height:100vh;
+}
+.box1{
+/* flex-grow:2; */
+}
+.box2{
+/* flex-grow:1; */
+flex-shrink:0;
+align-self: flex-start;
+}
+.box3{
+/* flex-grow:3; */
+flex-shrink: 10;
+}
+
+        .container>div{
+            /* width: 300px; */
+            background: lightblue;
+            /* padding:20px; */
+            margin:10px;
+            font-size: 50px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+    
+    flex parent properties
+    flex-child properties
+    order- it specifies the order of an flex items 
+         lowest value comes first
+    
+  
+.box1{
+    order:4
+}
+.box2{
+    order:2
+}
+.box3{
+    order:0
+}
+
+
+2) flex-basis: it is used to specify a initial width of an element
+.box1{
+flex-basis:25%
+}
+.box2{
+flex-basis:25%
+}
+.box3{
+flex-basis:50%
+}
+
+3) flex-grow: it specifies how spaces are distributed to each item
+.box1{
+flex-grow:2;
+}
+.box2{
+flex-grow:1;
+}
+.box3{
+flex-grow:1;
+}
+
+4) flex-shrink: it specifies the how much an item can shrink respect to
+another item
+
+.box1{
+flex-shrink:0;//it prevents the shrinkage
+}
+
+.box2{
+flex-shrink: 10;//it will shrink ten time more than other element
+}
+
+
+5) align-self:it is used to control alignment of an individual element
+on cross axis
+
+.box2{
+
+align-self:stretch;default
+align-self:flex-end;
+align-self:flex-start;
+align-self:center;
+}
+
+
+
+
+
+
+    
+    -->
+
+    <div class="container">
+        <div class="box1">box 1</div>
+        <div class="box2">box 2</div>
+        <div class="box3">box 3</div>
+
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+    </div>
+    
+</body>
+</html>
