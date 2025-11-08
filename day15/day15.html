@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    https://docs.google.com/spreadsheets/d/11WLAfmvXJBfXtCI-au_A_iHQouoWcwSWCxVPu4aP_Bw/edit?usp=sharing
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            /* grid-template-columns: 100px 200px 300px;
+            grid-template-columns: 25% 25% 50%;
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-template-columns: auto auto auto; */
+            grid-template-columns: repeat(2,200px);
+            height:100vh;
+            /* grid-template-rows:30% 30% 30%; */
+            gap:20px;
+            justify-content: space-evenly;
+            /* align-content: space-between; */
+            /* justify-items and align-items */
+            /* justify-items:start; */
+            /* align-items:center ; */
+            place-items: end start;
+
+        }
+        .card{
+            padding:20px;
+            background: lightcyan;
+           
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!-- 
+    grid 
+    it is a multi dimensional layout model 
+    that is used to create complex layout
+    in this we have grid container(parent prorperties)
+    and grid items(child  properties)
+    \
+   1) display :grid;
+   it is used to create grid-container but it doesnt 
+   apply any default values
+
+   2) grid-template-columns: it is used to specify
+   the no of columns and specifies the each
+   size of a column
+
+   grid-template-columns: 100px 200px 300px;
+                         50% 50%;
+                         1fr 1fr 2fr;
+                         auto auto auto auto;
+
+    3) grid-template-rows: it is used to specify the
+    no of rows and size of an each row
+    grid-template-rows:100px 200px 300px;
+    grid-template-rows:30% 30% 30%;
+    grid-template-rows:auto auto ;
+    grid-template-rows:1fr 2fr 2fr;
+
+    4) gap: it  is used to specify gap betwen
+    rows and columns
+    gap:20px 10px;
+
+    5) justify-content: it is used to control the 
+    grid items on x axis
+    justify-content: center
+                     start;
+                     end;
+                     space-between;
+                     space-around;
+                     space-evenly;
+
+    6) align-content:it is used to control the grid
+     items on y-axis
+       align-content: center
+                     start;
+                     end;
+                     space-between;
+                     space-around;
+                     space-evenly;
+                     stretch;
+
+    7) place-items: it is a short hand property for
+    align-items(y axis) and justify items(x axis)
+
+    it is used to control alignment inside of a cell
+   place-items: alignvalue  justifyvalue;
+                center      center;
+                start      end;
+                end      end;
+
+
+
+
+
+    
+    
+    -->
+    
+
+    <div class="parent">
+        <div class="card" id="el1">content</div>
+        <div class="card">content</div>
+        <div class="card">content</div>
+        <div class="card">content</div>
+        <div class="card">content</div>
+        <div class="card">content</div>
+    </div>
+</body>
+</html>
