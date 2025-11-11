@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .desktopmenu{
+            display: flex;
+            gap:20px;
+        }
+        .child {
+            background: lightblue;
+            padding: 20px;
+            margin: 10px;
+        }
+        .mobilemenu{
+            display: none;
+        }
+
+        @media screen and (width<576px){
+          .desktopmenu{
+            display: none;
+          }  
+          .mobilemenu{
+            display: block;
+          }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>logo</h1>
+        <div class="desktopmenu">
+            <div>home</div>
+            <div>about</div>
+            <div>services</div>
+            <div>contacts</div>
+        </div>
+        <div class="mobilemenu">
+            icon
+            
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="child">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+    </div>
+    <!-- 
+    grid child properties
+    grid template areas
+
+    media queries
+    it is used to apply styles based on a conditon
+    it should always declare at last 
+
+    syntax
+    @media screen and (condtion){
+    //declaration
+    }
+
+    @media screen and (width<576px){
+    body{
+    background:red;
+    }
+    h1{
+    color:blue;
+    }
+    }
+
+
+    
+    -->
+
+</body>
+
+</html>
