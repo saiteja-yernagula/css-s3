@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        li{
+            list-style-type: none;
+            font-weight: 900;
+            font-size: 30px;
+            transition: all 1s;
+        }
+        li:hover{
+            transform: scale(1.3);
+        }
+
+        div{
+            width:200px;
+            background: navy;
+            color:white;
+            padding:20px;
+            transition:all 2s;
+        }
+        div:hover{
+            transform: skew(20deg,20deg);
+        }
+
+  
+
+       
+    </style>
+</head>
+<body>
+    <!-- 
+    tranisiton
+    it controls the transition of a property
+    over a specified duration
+
+    transition-property:all or propertyname
+    transition-duration: 20s or 10ms
+    transition-delay:5s;
+    tranisiton-timing-function: ease
+                               linear
+                               ease-in
+                               ease-out
+                               ease-in-out
+shorthand
+
+transition : property duration  timingfun   delay;
+                 all   2s    ease-in   2s;
+
+
+transform properties
+it is used to control the position and apperance of an 
+element
+
+1) transform:translateX()//moves the element on x axis
+            :translateY()//moves the element on y axis
+            transform: translate(50px,100px);
+                                 x,  y
+
+2) transform:scaleX(1.5)//scale up the element on x axis
+            :scaleY(1.5)//scale up the element on Y axis
+             scale(1.2,1.3)
+                   x, y 
+             scale(0.5)//scale down the element                
+
+3) transform: rotateX(90deg)//rotate the element on x axis
+              rotateY(90deg)//rotate the element on Y axis
+            rotate(90deg)//clockwise rotation
+            rotate(-90deg)//anti clockwise rotation
+
+ 4) transform:skewX(20deg)//expandin the element on x axis
+    transform:skewY(20deg)//y axis
+
+
+    
+    -->
+
+ <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+ </ul>
+
+<div>
+element
+</div>
+
+    
+</body>
+</html>
