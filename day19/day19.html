@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* div,h1{
+    animation-name:bgcolorchange ;
+    animation-duration: 6s;
+} */
+/* defining an animation */
+/* @keyframes bgcolorchange{
+    0%{
+        background-color: blue;
+    }
+    33%{
+        background-color: red;
+    }
+    66%{
+        background-color:deeppink;
+    }
+    100%{
+        background-color:green ;
+    }
+} */
+
+.box{
+    width:20%;
+    background-color: deeppink;
+    padding:20px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-fill-mode:backwards ;
+     animation-iteration-count:3; 
+    /* animation-direction:nor; */
+    /* animation-delay:2s;
+    /* animation-fill-mode:both ; */ */
+}
+
+@keyframes blink{
+        0%,100%{
+        opacity:1
+    }
+    50%{
+        opacity:0;
+        
+    }
+}
+@keyframes slide{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes move{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translateX(600px);
+    }
+}
+
+/* 
+@keyframes move{
+
+    0%{
+        background-color: rgb(25, 22, 22);
+        transform: translateX(0);
+    }
+    33%{
+    
+        transform: translateX(400px);
+    }
+    66%{
+        transform:translate(400px,300px)
+    }
+    100%{
+        background-color: blue;
+        transform:translate(0,300px)
+
+
+    }
+} */
+
+    </style>
+</head>
+<body>
+    <!-- 
+    transitions
+    transform
+
+    animations
+    it is used to create complex animations
+    than transitions 
+    it allows us to specify keyframes
+    that defines changes of a styles
+
+    keyframes are used to define stages
+    @keyframe blink{
+    from{
+    background:blue
+    }
+    to{
+    background:green
+    }
+    
+    }
+    
+    animation properties
+    1) animation-name : keyframename;
+    2) animation-duration: 10s or 20ms;
+    3) animation-iteration-count: 1 or 2 or infinite;
+    4) animation-direction: normal---starts from first kf
+                            reverse---starts from last kf
+                            alternate--normal reverse normal
+                            alternate-reverse ---reverrse normal reverse
+    5) animation-delay:10s
+    6) 
+    it will apply first keyframe even befor starting
+    animation-fill-mode: backwards;
+
+    it will preserver the last keyframes after
+     completion of animation
+     animation-fill-mode:    forwards;
+
+     it is a combiantion of backwards and forwards;
+   animation-fill-mode:    both;
+
+   7)it is used to control the speed curve of an animation
+    animation-timing-function:ease
+                             :ease-out
+                             :ease-in-out
+                             :ease-in
+                             :linear
+                             :step(4)
+                             :cubic-bezier()
+
+
+    
+    -->
+
+    <!-- <div class="box" style="animation-timing-function: ease;">box</div>
+    <div class="box" style="animation-timing-function: ease-in;">box</div>
+    <div class="box" style="animation-timing-function: ease-out;">box</div>
+    <div class="box" style="animation-timing-function: ease-in-out;">box</div>
+    <div class="box" style="animation-timing-function: linear;">box</div>
+    <div class="box" style="animation-timing-function:steps(4);">box</div>
+     -->
+
+
+    <div class="box" >box</div>
+
+   
+</body>
+</html>
